@@ -51,7 +51,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
-  <!-- endreplace-->
+  <lint rel="import" href="bower_components/paper-dialog/paper-dialog.html" >  
+<!-- endreplace-->
 </head>
 
 <body unresolved class="fullbleed layout vertical">
@@ -95,7 +96,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               <a  data-route="contact" href="#contact">
                 <iron-icon icon="mail"></iron-icon>
-                <span> Contact me</span>
+                <span> Contact </span>
               </a>
           </paper-menu>
       </div>
@@ -120,26 +121,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <section data-route="home">
               <paper-material elevation="2">
-                <p> 
+                 <iron-image style="width:100px; height:100px; background-color: lightgray;" sizing="contain" position preload fade  src="images/rajesh.jpg"></iron-image> 
+		 <p> 
                    My Name is Rajesh Pandian M, I am doing my post graduation at Department of Computer Science & Engineering @ IIT Madras. I am interested in Graphs, Algorithms, Security and Optimization. 
                  <p>
-                <p class="paper-font-subhead"> I'll always go after to the things that are impossible (to others) and passionable (to me). I have completed my under graduation at Thiagarajar College of Engineering. I am doing my masters at IIT Madras. I have a great passion for GNU's Philosophy and FOSS. </p>
-               <p> I am grey hat hacker. I love programing, computers and gadgets. As a hobby, I sneak into websites by exploting their weakspot and evesdrop then I'll get out. But never smoke'em down. Hmm, Tell me something that difficult to do with computer I will show you a way to do it smarter and faster.  Yeah! that's what I am in one line. ;-) 
+                <p class="paper-font-subhead"> I'll always go after to the things that are impossible (to others) and passionable (to me). I have completed my under graduation at Thiagarajar College of Engineering. I am doing my masters at IIT Madras. I have a great passion for GNU's Philosophy and Free and Open Source Software. </p>
+               <p> I am grey hat hacker. I love programing, computers and gadgets. As a hobby, I sneak into websites by exploting their weakspot and evesdrop then I'll get out. But never smoke'em down. Hmm, Tell me something that is difficult to do with computer I will show you a way to do it smarter and faster.  Yeah! that's what I am in one line. ;-) 
               </p>
 <!--                  <my-list></my-list>
  
+ -->            </section>
                 
               </paper-material>
               <paper-material elevation="1">
                 <p class="paper-font-body2"> This is another card</p>
               
               </paper-material>
- -->            </section>
 
 
             <section data-route="education">
               <paper-material elevation="2">
-                <h2 class="paper-font-display2">Education</h2>
+                <h3> Education</h3>
                 <p>10th STD - <a href="https://www.facebook.com/pages/St-Joseph-Matric-Hr-Sec-School-Koodal-Nagar-Madurai/138935299452752"> St.Joseph Matriculation Hr. Sec. School, Madurai. </a> </p>
                 <p>12th STD - <a href="http://www.sboaschoolmdu.org/"> S.B.O.A Matriculation Hr. Sec. School, Madurai. </a> </p>
                 <p>B.Tech(IT) - <a href="http://tce.edu/">  Thiagarajar College of Engineering, Madurai </a> </p>
@@ -148,22 +150,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <section data-route="projects">
-              <paper-material elevation="1">
+              <paper-material elevation="2">
                 <h2 class="paper-font-display2">Projects</h2>
-                <p>This is the Project section</p>
+		<p>  </p>	
                 <a href="">Rajesh Pandian</a>
               </paper-material>
             </section>
             <section data-route="research">
-              <paper-material elevation="1">
+              <paper-material elevation="2" animated="true">
                 <h2 class="paper-font-display2">Research</h2>
-                <p>This is the Research Section of the page </p>
-                
-              </paper-material>
+                <p> I am doing my M.Tech Project under the guidance of  <a href="http://www.cse.iitm.ac.in/~swamy" target"_blank"> Dr.N.S. Narayanaswamy </a>  </p>
+	      </paper-material>
             </section>
 
             <section data-route="user-info">
-              <paper-material elevation="1">
+              <paper-material elevation="2">
                 <h2 class="paper-font-display2">
                 User:<span>{{params.name}}</span>
                 </h2>

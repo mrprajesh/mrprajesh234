@@ -1,0 +1,217 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title> Rajesh Pandian's Website</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Polymer Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/rajesh-icon-180x180.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/rajesh-icon-180x180.png">
+
+  <!-- Tile icon for Win8 (144x144) -->  <meta name="msapplication-TileImage" content="images/rajesh-icon-180x180.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <div drawer>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+        <img src="images/rajesh-icon-180x180.png" width=50 alt="rajesh_logo">
+          <span class="paper-font-title"> ajesh</span>
+        <div id="logo-container" layout="" horizontal="" center="">
+        <!-- <core-icon id="dropdown-toggle" icon="arrow-drop-down"></core-icon> -->
+      </div>
+        </paper-toolbar> 
+
+        <!-- Drawer Content -->
+          <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect" >
+              <a  data-route="home" href="#home">
+                <iron-icon icon="home"></iron-icon>
+                <span>Home</span>
+              </a>
+
+              <a  data-route="education" href="#education">
+                <iron-icon icon="account-balance"></iron-icon>
+                <span>Education</span>
+              </a>
+
+              <a  data-route="research" href="#research">
+                <iron-icon icon="explore"></iron-icon>
+                <span>Research</span>
+              </a>
+              
+
+              <a  data-route="projects" href="#projects">
+                <iron-icon icon="verified-user"></iron-icon>
+                <span>Projects</span>
+              </a>
+
+              <a  data-route="contact" href="#contact">
+                <iron-icon icon="mail"></iron-icon>
+                <span> Contact </span>
+              </a>
+          </paper-menu>
+      </div>
+      <paper-header-panel main mode="waterfall-tall">
+
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+          <!-- Toolbar icons -->
+          <paper-fab icon="favorite"></paper-fab>
+          
+          <!-- Application name -->
+          <div class="middle paper-font-display2 app-name"> Rajesh Pandian M</div>
+
+        </paper-toolbar>
+
+        <!-- Main Content -->
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+            <section data-route="home">
+              <paper-material elevation="2">
+                <iron-image style="width:100px; height:100px; background-color: lightgray;" sizing="contain" position preload fade  src="images/rajesh.jpg"></iron-image> 
+                <p>
+
+                   My Name is Rajesh Pandian M, I am doing my post graduation at Department of Computer Science & Engineering @ IIT Madras. I am interested in Graphs, Algorithms, Security and Optimization. 
+                 <p>
+                <p class="paper-font-subhead"> I'll always go after to the things that are impossible (to others) and passionable (to me). I have completed my under graduation at Thiagarajar College of Engineering. I am doing my masters at IIT Madras. I have a great passion for GNU's Philosophy and FOSS. </p>
+               <p> I am grey hat hacker. I love programing, computers and gadgets. As a hobby, I sneak into websites by exploting their weakspot and evesdrop then I'll get out. But never smoke'em down. Hmm, Tell me something that difficult to do with computer I will show you a way to do it smarter and faster.  Yeah! that's what I am in one line. ;-) 
+              </p>
+<!--                  <my-list></my-list>
+ 
+                
+              </paper-material>
+              <paper-material elevation="1">
+                <p class="paper-font-body2"> This is another card</p>
+              
+              </paper-material>
+ -->            </section>
+
+
+            <section data-route="education">
+              <paper-material elevation="2">
+                <h2 class="paper-font-display2">Education</h2>
+                <p>10th STD - <a href="https://www.facebook.com/pages/St-Joseph-Matric-Hr-Sec-School-Koodal-Nagar-Madurai/138935299452752"> St.Joseph Matriculation Hr. Sec. School, Madurai </a> </p>
+                <p>12th STD - <a href="http://www.sboaschoolmdu.org/"> S.B.O.A Matriculation Hr. Sec. School, Madurai. </a> </p>
+                <p>B.Tech(IT) - <a href="http://tce.edu/">  Thiagarajar College of Engineering, Madurai </a> </p>
+                <p>M.Tech(CSE) - <a href="http://www.cse.iitm.ac.in/">  Indian Institute of Technology Madras (IIT Madras), Chennai. </a> </p>
+              </paper-material>
+            </section>
+
+            <section data-route="projects">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Projects</h2>
+                <p>This is the Project section</p>
+                <a href="">Rajesh Pandian</a>
+              </paper-material>
+            </section>
+            <section data-route="research">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">Research</h2>
+                <p>This is the Research Section of the page </p>
+                
+              </paper-material>
+            </section>
+
+            <section data-route="user-info">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">
+                User:<span>{{params.name}}</span>
+                </h2>
+                <div>This is <span>{{params.name}}</span>'s section</div>
+              </paper-material>
+            </section>
+
+            <section data-route="contact">
+              <paper-material elevation="1">
+                <h2 class="paper-font-display2">About</h2>
+                <p> Most of time I hang around in twitter. However, I rarely login to facebook. And where ever there is wifi I am signed in to my Gmail. Still you need to contact me. Yay! ✈ </p>
+  
+              <a class="list-wrap -has-border -is-link" href="https://twitter.com/mrprajesh" target="_blank" aria-labelledby="label-social-list-item-twitter" aria-describedby="description-social-list-item-twitter">
+    <h3 id="label-social-list-item-twitter" class="_title">Twitter</h3>
+     
+  </a>
+  
+  
+              </paper-material>
+            </section>
+
+          </iron-pages>
+        </div>
+      </paper-header-panel>
+    </paper-drawer-panel>
+
+    <paper-toast id="caching-complete"
+                 duration="6000"
+                 text="Caching complete! This app will work offline.">
+    </paper-toast>
+
+    <platinum-sw-register auto-register
+                          clients-claim
+                          skip-waiting
+                          on-service-worker-installed="displayInstalledToast">
+      <platinum-sw-cache default-cache-strategy="networkFirst"
+                         precache-file="precache.json">
+      </platinum-sw-cache>
+    </platinum-sw-register>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+
+<!-- endbuild-->
+</body>
+
+</html>
