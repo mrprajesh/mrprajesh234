@@ -64,6 +64,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Toolbar -->
         <paper-toolbar id="drawerToolbar">
+        <paper-ripple></paper-ripple>
         <img src="images/rajesh-icon-180x180.png" width=50 alt="rajesh_logo">
           <span class="paper-font-title"> ajesh</span>
         <div id="logo-container" layout="" horizontal="" center="">
@@ -73,13 +74,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Content -->
           <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect" >
+              
               <a  data-route="home" href="#home">
                 <iron-icon icon="home"></iron-icon>
-                <span>Home</span>
+                <span>Home </span>
+              
               </a>
 
               <a  data-route="education" href="#education">
-                <iron-icon icon="account-balance"></iron-icon>
+                <iron-icon icon="social:school"></iron-icon>
                 <span>Education</span>
               </a>
 
@@ -108,7 +111,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <span class="flex"></span>
 
           <!-- Toolbar icons -->
-          <paper-fab icon="favorite"></paper-fab>
+          <paper-fab icon="social:share"></paper-fab>
           
           <!-- Application name -->
           <div class="middle paper-font-display2 app-name"> Rajesh Pandian M</div>
@@ -122,44 +125,100 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <section data-route="home">
               <paper-material elevation="2">
                  <iron-image style="width:100px; height:100px; background-color: lightgray;" sizing="contain" position preload fade  src="images/rajesh.jpg"></iron-image> 
-		 <p> 
+		             <p class="paper-font-body3"> 
                    My Name is Rajesh Pandian M, I am doing my post graduation at Department of Computer Science & Engineering @ IIT Madras. I am interested in Graphs, Algorithms, Security and Optimization. 
                  <p>
-                <p class="paper-font-subhead"> I'll always go after to the things that are impossible (to others) and passionable (to me). I have completed my under graduation at Thiagarajar College of Engineering. I am doing my masters at IIT Madras. I have a great passion for GNU's Philosophy and Free and Open Source Software. </p>
-               <p> I am grey hat hacker. I love programing, computers and gadgets. As a hobby, I sneak into websites by exploting their weakspot and evesdrop then I'll get out. But never smoke'em down. Hmm, Tell me something that is difficult to do with computer I will show you a way to do it smarter and faster.  Yeah! that's what I am in one line. ;-) 
+                <p class="paper-font-body3"> I'll always go after to the things that are impossible (to others) and passionable (to me). I have completed my under graduation at Thiagarajar College of Engineering. I am doing my masters after few years of stint as software engineer in industry. I have a great passion for GNU's Philosophy and Free & Open Source Software. </p>
+               <p class="paper-font-body3"> I am grey hat hacker. I love programing, computers and gadgets. As a hobby, I sneak into websites by exploting their weakspot and evesdrop then I'll get out. But never smoke'em down. Hmm, Tell me something that is difficult to do with computer I will show you a way to do it smarter and faster.  Yeah! that's what I am in one line. ;-) 
               </p>
 <!--                  <my-list></my-list>
  
- -->            </section>
+ -->           
                 
               </paper-material>
-              <paper-material elevation="1">
-                <p class="paper-font-body2"> This is another card</p>
+              <paper-material elevation="3">
+                <p  class="paper-font-body1"> This Webpage is designed using the Polymer 1.0 (Supported by Google) , the webcomponents that is being developed as a part of HTML 5.0 implementation under refinement. This webpage is licenced under BSD Licence. </p>
               
               </paper-material>
-
+               </section>
 
             <section data-route="education">
               <paper-material elevation="2">
-                <h3> Education</h3>
-                <p>10th STD - <a href="https://www.facebook.com/pages/St-Joseph-Matric-Hr-Sec-School-Koodal-Nagar-Madurai/138935299452752"> St.Joseph Matriculation Hr. Sec. School, Madurai. </a> </p>
-                <p>12th STD - <a href="http://www.sboaschoolmdu.org/"> S.B.O.A Matriculation Hr. Sec. School, Madurai. </a> </p>
-                <p>B.Tech(IT) - <a href="http://tce.edu/">  Thiagarajar College of Engineering, Madurai </a> </p>
-                <p>M.Tech(CSE) - <a href="http://www.cse.iitm.ac.in/">  Indian Institute of Technology Madras (IIT Madras), Chennai. </a> </p>
-              </paper-material>
+               <paper-fab icon="social:school" style="" ></paper-fab> 
+                 <h2> Education</h2> 
+
+                 <paper-item>  <iron-icon icon="account-balance"> </iron-icon> <span></span>10th STD - <a href="https://www.facebook.com/pages/St-Joseph-Matric-Hr-Sec-School-Koodal-Nagar-Madurai/138935299452752"> St.Joseph Matriculation Hr. Sec. School, Madurai, Tamil Nadu. </a></paper-item>
+                 <paper-item>  <iron-icon icon="account-balance"> </iron-icon> <span></span>12th STD - <a href="http://www.sboaschoolmdu.org/"> S.B.O.A Matriculation Hr. Sec. School, Madurai, Tamil Nadu. </a></paper-item>
+                 <paper-item> <iron-icon icon="account-balance"> </iron-icon> <span></span>B.Tech(IT) - <a href="http://tce.edu/">  Thiagarajar College of Engineering, Madurai, Tamil Nadu. </a></paper-item>
+                 <paper-item>  <iron-icon icon="account-balance"> </iron-icon> <span></span>M.Tech(CSE) - <a href="http://www.cse.iitm.ac.in/">  Indian Institute of Technology Madras (IIT Madras), Chennai, Tamil Nadu. </a></paper-item>
+             <paper-ripple> </paper-ripple>
+             </paper-material>
             </section>
 
             <section data-route="projects">
               <paper-material elevation="2">
-                <h2 class="paper-font-display2">Projects</h2>
-		<p>  </p>	
-                <a href="">Rajesh Pandian</a>
+                         <paper-fab icon="verified-user"></paper-fab> <span> </span>
+    
+                <h2>Projects</h2>
+                
+            <button class="heading" onclick="document.querySelector('#proj1').toggle();">  
+        <iron-icon icon="social:mood"></iron-icon> <span> </span> 
+        TCE SMS
+      </button>
+      <iron-collapse id="proj1">
+        <div class="dcontent">
+          <div>  Publishing Exam results through SMS(Short Message Service)  using a GSM (Global System for Mobile Communications) Device</div>
+        </div>
+      </iron-collapse>
+      <button class="heading" onclick="document.querySelector('#proj2').toggle();">  
+        <iron-icon icon="grade"></iron-icon> <span> </span> 
+        Manage Prisons 
+      </button>
+      <iron-collapse id="proj2">
+        <div class="dcontent">
+          <div>   We Resilience Team won 2nd runners up - The Great Mind Challenge(TGMC) 2008, a National level contest by IBM and had made it to the TGMC Hall of fame. <a href="http://www-07.ibm.com/in/university/greatmind/tgmc_halloffame.html">  more</a> </div>
+        </div>
+      </iron-collapse>
+      <button class="heading" onclick="document.querySelector('#proj3').toggle();">  
+        <iron-icon icon="grade"></iron-icon> <span> </span> 
+       E-COPs 
+      </button>
+      <iron-collapse id="proj3">
+        <div class="dcontent">
+          <div> Our team won 2nd runners up succesively - The Great Mind Challenge(TGMC) 2009, National level contest by IBM  and had made it to the TGMC Hall of fame. <a href="http://www-07.ibm.com/in/university/greatmind/tgmc_halloffame.html">  </a> - <a href="http://www.tce.edu/content/student-achievements"> more </a> </div>
+        </div>
+      </iron-collapse>
+      <button class="heading" onclick="document.querySelector('#proj4').toggle();">  
+        <iron-icon icon="stars"></iron-icon> <span> </span> 
+        Online Fleet Management system using Global Positioning System(GPS) device 
+      </button>
+      <iron-collapse id="proj4">
+        <div class="dcontent">
+          <div> __to_update__ </div>
+        </div>
+      </iron-collapse>
+            
+
+
+
               </paper-material>
+
+            <paper-material elevation="2" animated="true"> Key 
+                <p>  <iron-icon icon="social:mood"></iron-icon> Hobby Project </p>
+                <p>  <iron-icon icon="grade"></iron-icon> Contest Project </p>
+                <p>  <iron-icon icon="stars"></iron-icon> B.TECH Project </p>  
+            <paper-ripple > </paper-ripple>
+            </paper-material>
+              
+     <!-- <a href="">Rajesh <param name="" value="">ndian</a>
+ -->
             </section>
             <section data-route="research">
               <paper-material elevation="2" animated="true">
-                <h2 class="paper-font-display2">Research</h2>
+               <paper-fab icon="explore"></paper-fab> <span> </span>
+                <h2>Research</h2>
                 <p> I am doing my M.Tech Project under the guidance of  <a href="http://www.cse.iitm.ac.in/~swamy" target"_blank"> Dr.N.S. Narayanaswamy </a>  </p>
+                <p> -- awaits update  --</p>
 	      </paper-material>
             </section>
 
@@ -173,16 +232,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <section data-route="contact">
-              <paper-material elevation="1">
-                <h2 class="paper-font-display2">About</h2>
+              <paper-material elevation="3"> <paper-fab icon="mail" title="mrpraj@gmail.com" > </paper-fab> <span> </span>
+                <h2> Contact</h2>
                 <p> Most of time I hang around in twitter. However, I rarely login to facebook. And where ever there is wifi I am signed in to my Gmail. Still you need to contact me. Yay! ✈ </p>
   
-              <a class="list-wrap -has-border -is-link" href="https://twitter.com/mrprajesh" target="_blank" aria-labelledby="label-social-list-item-twitter" aria-describedby="description-social-list-item-twitter">
-    <h3 id="label-social-list-item-twitter" class="_title">Twitter</h3>
-     
-  </a>
-  
-  
+              <a href="https://twitter.com/mrprajesh" target="_blank"> <div>Twitter</div>   </a>
+              <a href="https://facebook.com/mrprajesh" target="_blank"> <div>Facebook</hdiv   </a>
+              <a href="https://github.com/mrprajesh" target="_blank"> <div>GitHub</div>   </a>
+<p> <span>  Hover/Place the mouse over the mail icon on the top for email id</span>  </p>
+
               </paper-material>
             </section>
 
